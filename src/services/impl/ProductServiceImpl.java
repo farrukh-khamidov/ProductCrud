@@ -3,15 +3,13 @@ package services.impl;
 import models.Product;
 import repositories.ProductRepository;
 import repositories.impl.JdbcProductRepository;
-import repositories.impl.JdbcProductRepository2;
-import repositories.impl.MapProductRepository;
 import services.ProductService;
 
 import java.util.List;
 
 public class ProductServiceImpl implements ProductService {
 
-    private ProductRepository productRepository = new JdbcProductRepository2();
+    private ProductRepository productRepository = new JdbcProductRepository();
 
     @Override
     public Product save(Product product) {
