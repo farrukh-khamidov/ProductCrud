@@ -31,7 +31,7 @@ public class ProductController {
 
     public static class DeleteById {
         public static void main(String[] args) {
-            String id = "p15";
+            String id = "p16";
            productService.deleteById(id);
         }
     }
